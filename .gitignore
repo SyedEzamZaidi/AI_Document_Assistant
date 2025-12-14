@@ -49,3 +49,6 @@ logs/
 dist/
 build/
 *.egg-info/
+
+# Practice exercises (not for portfolio)
+practice/
