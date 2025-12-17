@@ -1,0 +1,590 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 62 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.python.org/3.13/)
+>> /Border [ 0 0 0 ] /Rect [ 80 431.875 191.06 443.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.python.org/3.13/library/)
+>> /Border [ 0 0 0 ] /Rect [ 80 415.875 177.047 427.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python.langchain.com/docs/)
+>> /Border [ 0 0 0 ] /Rect [ 80 319.875 213.056 331.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python.langchain.com/docs/get_started/installation)
+>> /Border [ 0 0 0 ] /Rect [ 80 303.875 149.534 315.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python.langchain.com/docs/get_started/quickstart)
+>> /Border [ 0 0 0 ] /Rect [ 80 287.875 153.017 299.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python.langchain.com/api_reference/community/document_loaders.html)
+>> /Border [ 0 0 0 ] /Rect [ 80 241.875 223.055 253.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.langchain.com/oss/python/integrations/splitters)
+>> /Border [ 0 0 0 ] /Rect [ 80 225.875 132.515 237.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://reference.langchain.com/python/langchain_text_splitters/)
+>> /Border [ 0 0 0 ] /Rect [ 80 209.875 199.538 221.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python.langchain.com/docs/modules/data_connection/text_embedding/)
+>> /Border [ 0 0 0 ] /Rect [ 80 163.875 170.027 175.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+14 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python.langchain.com/docs/modules/data_connection/vectorstores/)
+>> /Border [ 0 0 0 ] /Rect [ 80 117.875 174.527 129.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+15 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python.langchain.com/docs/integrations/vectorstores/chroma)
+>> /Border [ 0 0 0 ] /Rect [ 80 101.875 157.031 113.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+16 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python.langchain.com/docs/modules/data_connection/retrievers/)
+>> /Border [ 0 0 0 ] /Rect [ 80 55.875 121.004 67.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+17 0 obj
+<<
+/Annots [ 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 
+  15 0 R 16 0 R ] /Contents 67 0 R /MediaBox [ 0 0 612 792 ] /Parent 66 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+18 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python.langchain.com/docs/tutorials/rag)
+>> /Border [ 0 0 0 ] /Rect [ 80 739.875 132.011 751.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+19 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://python.langchain.com/docs/integrations/chat/ollama)
+>> /Border [ 0 0 0 ] /Rect [ 80 693.875 153.53 705.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+20 0 obj
+<<
+/Annots [ 18 0 R 19 0 R ] /Contents 68 0 R /MediaBox [ 0 0 612 792 ] /Parent 66 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+21 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.trychroma.com/)
+>> /Border [ 0 0 0 ] /Rect [ 80 687.875 171.026 699.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+22 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.trychroma.com/)
+>> /Border [ 0 0 0 ] /Rect [ 80 671.875 170.531 683.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+23 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.trychroma.com/getting-started)
+>> /Border [ 0 0 0 ] /Rect [ 80 655.875 167.048 667.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+24 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.trychroma.com/usage-guide)
+>> /Border [ 0 0 0 ] /Rect [ 80 639.875 132.524 651.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+25 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.trychroma.com/deployment)
+>> /Border [ 0 0 0 ] /Rect [ 80 623.875 128.015 635.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+26 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://cookbook.chromadb.dev/)
+>> /Border [ 0 0 0 ] /Rect [ 80 607.875 168.524 619.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+27 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.trychroma.com/guides/collections)
+>> /Border [ 0 0 0 ] /Rect [ 80 561.875 124.01 573.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+28 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.trychroma.com/guides/querying)
+>> /Border [ 0 0 0 ] /Rect [ 80 545.875 116.513 557.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+29 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.trychroma.com/guides/embeddings)
+>> /Border [ 0 0 0 ] /Rect [ 80 529.875 130.022 541.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+30 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.trychroma.com/reference/py-client)
+>> /Border [ 0 0 0 ] /Rect [ 80 483.875 196.55 495.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+31 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/chroma-core/chroma)
+>> /Border [ 0 0 0 ] /Rect [ 80 467.875 153.521 479.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+32 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://ollama.com/)
+>> /Border [ 0 0 0 ] /Rect [ 80 367.875 155.024 379.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+33 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.ollama.com)
+>> /Border [ 0 0 0 ] /Rect [ 80 351.875 170.531 363.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+34 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://ollama.com/library)
+>> /Border [ 0 0 0 ] /Rect [ 80 335.875 134.513 347.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+35 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/ollama/ollama)
+>> /Border [ 0 0 0 ] /Rect [ 80 319.875 153.521 331.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+36 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/ollama/ollama-python)
+>> /Border [ 0 0 0 ] /Rect [ 80 303.875 138.023 315.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+37 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/ollama/ollama-js)
+>> /Border [ 0 0 0 ] /Rect [ 80 287.875 152.018 299.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+38 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://ollama.com/library/llama3.2)
+>> /Border [ 0 0 0 ] /Rect [ 80 241.875 134.531 253.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+39 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://ollama.com/library/mistral)
+>> /Border [ 0 0 0 ] /Rect [ 80 225.875 106.496 237.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+40 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://ollama.com/library/phi3)
+>> /Border [ 0 0 0 ] /Rect [ 80 209.875 101.006 221.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+41 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://ollama.com/library/deepseek-r1)
+>> /Border [ 0 0 0 ] /Rect [ 80 193.875 136.52 205.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+42 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://ollama.com/library/gemma3)
+>> /Border [ 0 0 0 ] /Rect [ 80 177.875 119.51 189.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+43 0 obj
+<<
+/Annots [ 21 0 R 22 0 R 23 0 R 24 0 R 25 0 R 26 0 R 27 0 R 28 0 R 29 0 R 30 0 R 
+  31 0 R 32 0 R 33 0 R 34 0 R 35 0 R 36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 
+  41 0 R 42 0 R ] /Contents 69 0 R /MediaBox [ 0 0 612 792 ] /Parent 66 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+44 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/huggingface/sentence-transformers)
+>> /Border [ 0 0 0 ] /Rect [ 80 687.875 153.521 699.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+45 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://pypi.org/project/sentence-transformers/)
+>> /Border [ 0 0 0 ] /Rect [ 80 671.875 136.529 683.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+46 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://huggingface.co/sentence-transformers)
+>> /Border [ 0 0 0 ] /Rect [ 80 655.875 187.046 667.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+47 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://huggingface.co/models?library=sentence-transformers)
+>> /Border [ 0 0 0 ] /Rect [ 80 639.875 211.796 651.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+48 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
+>> /Border [ 0 0 0 ] /Rect [ 80 623.875 209.528 635.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+49 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://huggingface.co/blog/sentence-transformers-joins-hf)
+>> /Border [ 0 0 0 ] /Rect [ 80 607.875 170.54 619.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+50 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.gradio.app/docs)
+>> /Border [ 0 0 0 ] /Rect [ 80 529.875 170.036 541.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+51 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.gradio.app/guides/quickstart)
+>> /Border [ 0 0 0 ] /Rect [ 80 513.875 147.023 525.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+52 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.gradio.app/docs/chatinterface)
+>> /Border [ 0 0 0 ] /Rect [ 80 497.875 134.027 509.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+53 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/gradio-app/gradio)
+>> /Border [ 0 0 0 ] /Rect [ 80 481.875 153.521 493.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+54 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.docker.com/)
+>> /Border [ 0 0 0 ] /Rect [ 80 403.875 171.53 415.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+55 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.docker.com/engine/reference/builder/)
+>> /Border [ 0 0 0 ] /Rect [ 80 387.875 164.024 399.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+56 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.docker.com/compose/)
+>> /Border [ 0 0 0 ] /Rect [ 80 371.875 149.516 383.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+57 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://learn.microsoft.com/en-us/azure/ai-services/openai/)
+>> /Border [ 0 0 0 ] /Rect [ 80 293.875 199.556 305.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+58 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/)
+>> /Border [ 0 0 0 ] /Rect [ 80 277.875 107.504 289.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+59 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://git-scm.com/doc)
+>> /Border [ 0 0 0 ] /Rect [ 80 199.875 154.529 211.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+60 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://docs.github.com/en)
+>> /Border [ 0 0 0 ] /Rect [ 80 183.875 139.022 195.875 ] /Subtype /Link /Type /Annot
+>>
+endobj
+61 0 obj
+<<
+/Annots [ 44 0 R 45 0 R 46 0 R 47 0 R 48 0 R 49 0 R 50 0 R 51 0 R 52 0 R 53 0 R 
+  54 0 R 55 0 R 56 0 R 57 0 R 58 0 R 59 0 R 60 0 R ] /Contents 70 0 R /MediaBox [ 0 0 612 792 ] /Parent 66 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+62 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+63 0 obj
+<<
+/Contents 71 0 R /MediaBox [ 0 0 612 792 ] /Parent 66 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+64 0 obj
+<<
+/PageMode /UseNone /Pages 66 0 R /Type /Catalog
+>>
+endobj
+65 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20251217171154+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20251217171154+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+66 0 obj
+<<
+/Count 5 /Kids [ 17 0 R 20 0 R 43 0 R 61 0 R 63 0 R ] /Type /Pages
+>>
+endobj
+67 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 970
+>>
+stream
+Gatm:=`^<&&:X@ToM`nK<ENimh)Eq*CR%m[,l<gm&Or=E_]8rfrqeP3&X5sI/k$KV6@WA:f,"H$&$eBS$,Fje^0_Nr'S7bFgTVh<_,\kXdik2>>n]?cj3.5A+=??`":fqCXFl8KcLqF19@,?rC6sZ(/^4p[E%1c*7*pAGhnYf,Sp@9m1(0"nVhupcV=;9u>k0`4q)JT(&:B+gG98$:HTZ'8>i.-t*Bs/_/SU8,Fq5!r>K$*J.*pC',/)ro_(aKW=EEp(LHBt3cZ>4!L0#11Pq"C&;WJfi?cK-OnRThQOX7Tc^sXsl?o_],K#^<u'T[^Y,nG8Vi=`(\*A&XJ2fNe"pEWKJ'jbtPf:;79\]Afo_ftH#HB3HCg`N1MP/SP(+psUW'kC6NE=>\r[pkK6j=nh(9F;A%,+X:RF(j(UJ3JG^pb9j!cB]FsS>TRu\k=Zp<:C/q%UgMlq'A](2H0b8`M\N!PJPVcThu&AX2Aq]Wt=_erc.j4LR"='mq4>q,_qML81)<i\siEH]<%g*e\gZ0W:*X16+_#[ENDeZMZq&!)G-1p(%Ua6.RLs\/Y[BDkk&-/o>0o:ho@?I8#.J6gJ$hE98!bKAK[%;>L?mn]1)'@-;VQj[#+EIMek<E"Nrs1EuicfLo%GoS;@rO\ngQR5'8G[_I#+pnoV#ZAm'R%$#meI.Z4^F,-`q<&]l3U8L!MlY"t<i=eb:O<i*b7_@KT3*H>=mh@q0^Jl:KC"8';=iCdL3(kMgYh^>6ih,]D[f.h9(j06g+B.^.>8qHG-7i@5pbV?U(GJjC-TMK>q>H.7Fs&CaZ`'WDmTP^LSCaH.JJ7%o9pkP8cP2'+uaeEfbCAfGr.qQ'mK3K>'9>OuCW7GAtS`JdK>Xi]j(un1P*XQPWDJOLsk,?s*&ImkX9,J(WKq6=]a5_?(5)s"c[s]5\%R2TD>iF8=`$OfP*(9Y*YRMs=JB%g#SMu?g%m'~>endstream
+endobj
+68 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 237
+>>
+stream
+Gat>N9a\`k&-_!?:@XY8+srL39pZ2:6:EB75S5T5ra;`"2i5+Z(EtU[$t8]j7RFVJiBB39g1%UXO9BoaN-GJp@:Ru]anMSH8<e,3mZ!E,.1pfpC69?P',s:NqNAC^cOUXbYY>Bu6SA2afkIjHI10Cg(%iR?#.sA(mV9tVq(YB/;\F^5m@+FF:XBfOHE@dh/3@7s%[XISL8o%(M)q2bIk>oHl_5hW7MG1:S:Ng(::")5~>endstream
+endobj
+69 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 736
+>>
+stream
+Gaua=hf%4&&BE](/+.,GPFBMSr8P-2;,(#s-/2@*SA]s0"D<`NM>r$"@%./@V9I@%`JPl*5!%TqmV;m<Gt>^4'u4Yn2kL?eKQIMGn,c-nE0h'K&'034j?lVgCc;;U&n;c;^r([8)M?YD(kPp#9H`mf[Y\%Q\-OAFj!J']iHVJ8`?r(`1Ao:9/JUsHAf5CZbLI?'h]VmMTqBPMM"dZ-*dp(92#&?53&LE/q`)EU*M*>+]<la+WAmR^hH#$!R20gQK:9kOcu9]pE<9GZ-4'lH;"T>,W!#RQ'G#9!QPH^WMHcLRmt*Q,/k%Bpq2T"'^]eu*[2,5H/2U:o(GK\p@8E7;0">7,F0K<(&7*X0]Ir<S4'*s!7'r<F7oiX%&UFgp.:4n&g7Vkp/>.n^AR9H.CSnAR+t%+GbH`tRi([D57&!I/='MFs.ghiGnug,[;&GT^0E5.=(R=?,X4M@oj&3O`b91fQ":)U2#>Gail&)IepMC,\]U"O27^BEW_d97]Iu+h7S!PG%QuTL$bg"(sboZ4X7Xs+6Bh`f:r);:`$Nc%jY1jjY5X5(G4?!MZ:\,P>UZ$\X0hS!1L^.(%;b3$"B%IbD:<(5aZqO8m`P6N`)+gQlCX?_fK.V*iC4-li`*"^^M6_"lVP(,+@sSi;%.3G=JJ7S!qJMuJ\Y1'JH0@`(U="j`<g)o>XcI7;9l1k*EcfF_on)eelXs\'`GYU,='`M@UhK3@0_bt0*;BR~>endstream
+endobj
+70 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 765
+>>
+stream
+Gatn%?'C^2'Sc)N=.H=OgK#R#!qae+Y-'QAlaHG'D^#CSb(gGQNr/-h,5+B>;qoDJ_e98F*7"HD9aJ7ROo7Ep!T#.WRLgSUOpm08plN_Y0"Lh+71N*K(IF2B_`3BHP91Ir.j^9J^G)*Q+A>SiOH9Zq$kDqnie?=S3t4I:0Y$TB>ZUZRVZNFoGNDGufD*+3(U0jiU1g.$Y9E]Ea\,pU,@8Dj\?)mNTro21MN!A=0L,ik5EKki+OL@Q-6<`%s#OHNi4Z'm;.0cfi`22mWYDHfEH1O_D@eT_N51:%.&-\IQb),J?ioki9D@5@D""tN]G'&2O_q4D7V:l<?nQZH)(^'EiOLZ%!oF4M=+MGmc7A_7>?P#sZkqC\pBH5[>Uch!BJ1"4G$XhWPSZ<;;/2r^osQB\lHT52GYnkcZBFguE6a2FW3Ls3]_u1P4CjjR,qiY2<HX'D0@B,5D@l8bFugOhn&HMOo9h$%)$547%&SocAW9l@R))2\;LGUs`iMQnXgm=T^9,jZGMoYO%#>W#4E`L91bDc\9KTdC/ic/)UA2u'hTdh%</-=VaG[,Fb!2_ichoTengUp(/eiLS'Y<U2Cl<V;FZ+TiGHH[Ki*Pb%cd)73@l%6nCjm^qhSP4R4$1OBCN&JN"ZHO9F(0L7MV-tP:>qeM("IQ+cOS\!>9t4OV?JY(:Lbot*u/e#r\V!Vs&*:2=1OI3c@n9T<Xs&XnF<%"07Qn4,dropLqC19,dO05+ku_<D*/CC`qi0BeMm3=Q&k~>endstream
+endobj
+71 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 979
+>>
+stream
+Gau1-?#SFN'Sc)P($BIV)JSPc!R`TNQ>I9#>+4:k<N]iID*F?IYk?oB32'<J1p*KG&Wq&Q^Q2`oEuY6>?DP7*"CN4dl')1A&2&ODQ4)X[cGRrr%bZj6D$V,=K<``H!VP4K=O_JL'7aZ^e-!,Di'_*?2pR`I]G-0/cJ(:aG-;7p+(-^e6A^p7Qt/e*dO7>2n/fHm7eR1mQdW=WPGYcETG47"4q0W=p.aS41o[8k+AT>?;YjH7Z\6j8iG=e+l\-0sAsH*!RIb83TR0h[0ec/(8AmkD"])&am_s'E@_ftl.[uGeC8(QS)c6,MI@!OaQk(?cFrNt.RHo_YIhO9N0srE)\RgQ0`,6f/->Skmltfo3i!o$BH1A8gb-8$B2OW"/9?$+t<\\9RM$Jo#Q6OlKFg#LRb+;%GEDe=U\ZNs5"q.SFQ5YESg#>UX/T.1&/\7RKN9?hi+`crp1#NYQN>S%fF>[2WRDP?QP/D\>XcC@@[,T@D[fg0)k!g708Wk9_qU%VkM?LW(NAD=VQ,>4n6Le.'b-"pZ^i,jjd\qS`Ddo]R:es>t_$cOOX[)Ilj7pP8?LLA66@/V1C8"2d6kmab[5[Q$Z!-,d.HBE8s0*9dD'eH(7,28HB.CrofL&]YW0W=h,C/5>RmlDS_0qG[;<s)!2tM^8oOL7>!%*CtVDq:)g@8tr(G[mq!gd\g$[fJiB=g:Al;aVjjr&V:^thLYe8^u.cXWUa(t05M&:PD"QG)iO"0lEW_92%T\9N`US]3K?UpY$Gfk)773tn)CHRqkuR9Bn[1p/uLMXi=K(i\.(,P;u7N3dbQ&AnQ"F+RQ;nE[0b2#`E3^AL%cYp5V?7sk28ei.+&kKP?jdiuY/$#Xce!=?I?[Ad4t9AO2+n:9FpAbVRf6Q#cHNl=kej6$ce<Y*JS/9;aV0jZRUiVG:\,,ka@c-"lDfEa\lDs"AG[R/*4'N#Tq]7aWRABSW'NgL!@Iq'i"Wr~>endstream
+endobj
+xref
+0 72
+0000000000 65535 f 
+0000000073 00000 n 
+0000000135 00000 n 
+0000000242 00000 n 
+0000000354 00000 n 
+0000000473 00000 n 
+0000000644 00000 n 
+0000000824 00000 n 
+0000001001 00000 n 
+0000001202 00000 n 
+0000001401 00000 n 
+0000001619 00000 n 
+0000001823 00000 n 
+0000002031 00000 n 
+0000002248 00000 n 
+0000002463 00000 n 
+0000002673 00000 n 
+0000002884 00000 n 
+0000003174 00000 n 
+0000003365 00000 n 
+0000003566 00000 n 
+0000003788 00000 n 
+0000003958 00000 n 
+0000004129 00000 n 
+0000004315 00000 n 
+0000004497 00000 n 
+0000004678 00000 n 
+0000004852 00000 n 
+0000005040 00000 n 
+0000005226 00000 n 
+0000005414 00000 n 
+0000005603 00000 n 
+0000005784 00000 n 
+0000005947 00000 n 
+0000006114 00000 n 
+0000006284 00000 n 
+0000006460 00000 n 
+0000006643 00000 n 
+0000006822 00000 n 
+0000007001 00000 n 
+0000007179 00000 n 
+0000007354 00000 n 
+0000007535 00000 n 
+0000007711 00000 n 
+0000008079 00000 n 
+0000008275 00000 n 
+0000008466 00000 n 
+0000008654 00000 n 
+0000008857 00000 n 
+0000009062 00000 n 
+0000009263 00000 n 
+0000009434 00000 n 
+0000009618 00000 n 
+0000009803 00000 n 
+0000009983 00000 n 
+0000010150 00000 n 
+0000010343 00000 n 
+0000010519 00000 n 
+0000010722 00000 n 
+0000010950 00000 n 
+0000011117 00000 n 
+0000011287 00000 n 
+0000011617 00000 n 
+0000011723 00000 n 
+0000011919 00000 n 
+0000011989 00000 n 
+0000012273 00000 n 
+0000012362 00000 n 
+0000013423 00000 n 
+0000013751 00000 n 
+0000014578 00000 n 
+0000015434 00000 n 
+trailer
+<<
+/ID 
+[<76e2721ee42149b58f547dc455214aa6><76e2721ee42149b58f547dc455214aa6>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 65 0 R
+/Root 64 0 R
+/Size 72
+>>
+startxref
+16504
+%%EOF
