@@ -1,0 +1,470 @@
+# ================================================
+# AI Document Assistant - Model Configuration
+# ================================================
+# Edit this file to change which models to use
+# No code changes needed!
+# Last Updated: December 2025
+
+# ================================================
+# EMBEDDING MODELS CONFIGURATION
+# ================================================
+embeddings:
+  # Which embedding model to use currently
+  current: "all-MiniLM-L6-v2"
+  
+  # Which provider to use (local or cloud)
+  current_provider: "local"  # local | cloud
+  
+  # ============================================
+  # LOCAL MODELS (Free, Runs on Your Machine)
+  # ============================================
+  local_models:
+    - name: "all-MiniLM-L6-v2"
+      full_name: "sentence-transformers/all-MiniLM-L6-v2"
+      provider: "huggingface"
+      dimensions: 384
+      size_mb: 90
+      speed: "fast"
+      quality: "good"
+      cost: "FREE"
+      privacy: "full"
+      description: "Lightweight, fast, good quality - RECOMMENDED for most use cases"
+      
+    - name: "all-mpnet-base-v2"
+      full_name: "sentence-transformers/all-mpnet-base-v2"
+      provider: "huggingface"
+      dimensions: 768
+      size_mb: 420
+      speed: "medium"
+      quality: "excellent"
+      cost: "FREE"
+      privacy: "full"
+      description: "Larger, slower, best quality - use for high-accuracy requirements"
+      
+    - name: "multi-qa-MiniLM"
+      full_name: "sentence-transformers/multi-qa-MiniLM-L6-cos-v1"
+      provider: "huggingface"
+      dimensions: 384
+      size_mb: 90
+      speed: "fast"
+      quality: "good"
+      cost: "FREE"
+      privacy: "full"
+      description: "Optimized for question-answering tasks"
+  
+  # ============================================
+  # CLOUD MODELS (Paid API, Requires Internet)
+  # ============================================
+  cloud_models:
+    - name: "text-embedding-3-small"
+      full_name: "text-embedding-3-small"
+      provider: "openai"
+      dimensions: 1536
+      speed: "very_fast"
+      quality: "excellent"
+      cost: "$0.00002 per 1K tokens"
+      privacy: "data_sent_to_openai"
+      requires_api_key: true
+      description: "OpenAI's efficient embedding model - requires API key"
+      
+    - name: "text-embedding-3-large"
+      full_name: "text-embedding-3-large"
+      provider: "openai"
+      dimensions: 3072
+      speed: "fast"
+      quality: "best"
+      cost: "$0.00013 per 1K tokens"
+      privacy: "data_sent_to_openai"
+      requires_api_key: true
+      description: "OpenAI's most capable embedding model"
+      
+    - name: "text-embedding-ada-002"
+      full_name: "text-embedding-ada-002"
+      provider: "azure_openai"
+      dimensions: 1536
+      speed: "fast"
+      quality: "excellent"
+      cost: "Varies by Azure region"
+      privacy: "enterprise_compliant"
+      requires_api_key: true
+      description: "Azure OpenAI embeddings - for enterprise deployments"
+
+# ================================================
+# LLM MODELS CONFIGURATION
+# ================================================
+llm:
+  # Which LLM to use currently
+  current: "llama3.2-3b"
+  
+  # Which provider to use (local or cloud)
+  current_provider: "local"  # local | cloud
+  
+  # ============================================
+  # LOCAL MODELS (Free, Runs via Ollama)
+  # ============================================
+  local_models:
+    - name: "llama3.2-3b"
+      provider: "ollama"
+      size: "3B"
+      size_gb: 2
+      ram_required_gb: 4
+      speed: "fast"
+      quality: "good"
+      cost: "FREE"
+      privacy: "full"
+      license: "Llama 3 Community License"
+      description: "Lightweight, fast, good for development and testing"
+      
+    - name: "llama3.1"
+      provider: "ollama"
+      size: "7B"
+      size_gb: 4.7
+      ram_required_gb: 8
+      speed: "medium"
+      quality: "excellent"
+      cost: "FREE"
+      privacy: "full"
+      license: "Llama 3 Community License"
+      description: "Balanced performance, RECOMMENDED for production"
+      
+    - name: "mistral"
+      provider: "ollama"
+      size: "7B"
+      size_gb: 4.1
+      ram_required_gb: 8
+      speed: "medium"
+      quality: "excellent"
+      cost: "FREE"
+      privacy: "full"
+      license: "Apache 2.0"
+      description: "Excellent for technical and analytical content"
+      
+    - name: "phi3"
+      provider: "ollama"
+      size: "3.8B"
+      size_gb: 2.3
+      ram_required_gb: 4
+      speed: "fast"
+      quality: "good"
+      cost: "FREE"
+      privacy: "full"
+      license: "MIT"
+      description: "Microsoft's efficient model, good reasoning"
+      
+    - name: "gemma2"
+      provider: "ollama"
+      size: "9B"
+      size_gb: 5.5
+      ram_required_gb: 12
+      speed: "medium"
+      quality: "excellent"
+      cost: "FREE"
+      privacy: "full"
+      license: "Gemma Terms of Use"
+      description: "Google's capable model, good instruction following"
+  
+  # ============================================
+  # CLOUD MODELS (Paid API, Requires Internet)
+  # ============================================
+  cloud_models:
+    - name: "gpt-4o"
+      provider: "openai"
+      size: "unknown"
+      speed: "fast"
+      quality: "best"
+      cost: "$2.50 per 1M input tokens, $10 per 1M output tokens"
+      privacy: "data_sent_to_openai"
+      requires_api_key: true
+      description: "OpenAI's most capable model - expensive but highest quality"
+      
+    - name: "gpt-4o-mini"
+      provider: "openai"
+      size: "unknown"
+      speed: "very_fast"
+      quality: "excellent"
+      cost: "$0.15 per 1M input tokens, $0.60 per 1M output tokens"
+      privacy: "data_sent_to_openai"
+      requires_api_key: true
+      description: "Affordable, fast, good quality - best cloud option"
+      
+    - name: "gpt-3.5-turbo"
+      provider: "openai"
+      size: "unknown"
+      speed: "very_fast"
+      quality: "good"
+      cost: "$0.50 per 1M input tokens, $1.50 per 1M output tokens"
+      privacy: "data_sent_to_openai"
+      requires_api_key: true
+      description: "Cheapest OpenAI option, still capable"
+      
+    - name: "gpt-4-turbo"
+      provider: "azure_openai"
+      size: "unknown"
+      speed: "fast"
+      quality: "excellent"
+      cost: "Varies by Azure region"
+      privacy: "enterprise_compliant"
+      requires_api_key: true
+      description: "Azure-hosted GPT-4 - for enterprise with compliance needs"
+      
+    - name: "claude-3-5-sonnet"
+      provider: "anthropic"
+      size: "unknown"
+      speed: "fast"
+      quality: "excellent"
+      cost: "$3 per 1M input tokens, $15 per 1M output tokens"
+      privacy: "data_sent_to_anthropic"
+      requires_api_key: true
+      description: "Anthropic's balanced model - excellent reasoning"
+
+# ================================================
+# CHUNKING CONFIGURATION
+# ================================================
+chunking:
+  # Current chunking method to use
+  current_method: "recursive"
+  
+  # Current parameter set to use
+  current_params: "standard"
+  
+  # Available chunking methods (All local/open source)
+  available_methods:
+    - name: "recursive"
+      class: "RecursiveCharacterTextSplitter"
+      source: "langchain (open source)"
+      cost: "FREE"
+      description: "Splits at natural boundaries (paragraphs → sentences → words) - RECOMMENDED"
+      
+    - name: "character"
+      class: "CharacterTextSplitter"
+      source: "langchain (open source)"
+      cost: "FREE"
+      description: "Simple character-based splitting with separator"
+      
+    - name: "token"
+      class: "TokenTextSplitter"
+      source: "langchain (open source)"
+      cost: "FREE"
+      description: "Splits by token count (respects LLM token limits)"
+  
+  # Parameter configurations to test
+  parameter_sets:
+    - name: "tiny"
+      chunk_size: 200
+      chunk_overlap: 20
+      description: "Very small chunks - for precise, granular retrieval"
+      use_case: "Short snippets, definitions, FAQ"
+      
+    - name: "small"
+      chunk_size: 300
+      chunk_overlap: 30
+      description: "Small chunks - good for focused retrieval"
+      use_case: "Technical documentation, code snippets"
+      
+    - name: "standard"
+      chunk_size: 500
+      chunk_overlap: 50
+      description: "Balanced chunks - good for most documents"
+      use_case: "General documents, articles, reports"
+      
+    - name: "large"
+      chunk_size: 1000
+      chunk_overlap: 100
+      description: "Large chunks - more context per chunk"
+      use_case: "Long-form content, research papers"
+      
+    - name: "xlarge"
+      chunk_size: 1500
+      chunk_overlap: 150
+      description: "Very large chunks - maximum context"
+      use_case: "Books, comprehensive guides"
+
+# ================================================
+# VECTOR STORE CONFIGURATION
+# ================================================
+vector_store:
+  type: "chroma"  # Local, open source, FREE
+  provider: "local"
+  cost: "FREE"
+  privacy: "full"
+  persist_directory: "./data/chroma_db"
+  collection_name: "documents"
+  
+  # Search parameters
+  retrieval:
+    top_k: 3  # Number of chunks to retrieve
+    score_threshold: 0.5  # Minimum similarity score (0-1)
+
+# ================================================
+# RETRIEVAL CONFIGURATION
+# ================================================
+retrieval:
+  # Number of similar chunks to retrieve
+  top_k: 3
+  
+  # Minimum similarity score (0-1)
+  min_similarity_score: 0.5
+
+# ================================================
+# EVALUATION CONFIGURATION
+# ================================================
+evaluation:
+  # Which model to use as AI Judge
+  current_judge: "llama3.1"
+  
+  # Which provider to use (local or cloud)
+  judge_provider: "local"  # local | cloud
+  
+  # ============================================
+  # LOCAL JUDGE MODELS (Free)
+  # ============================================
+  local_judge_models:
+    - name: "llama3.1"
+      provider: "ollama"
+      cost: "FREE"
+      quality: "excellent"
+      description: "Good reasoning, balanced judgement - RECOMMENDED"
+      
+    - name: "mistral"
+      provider: "ollama"
+      cost: "FREE"
+      quality: "excellent"
+      description: "Analytical, strict scoring"
+      
+    - name: "gemma2"
+      provider: "ollama"
+      cost: "FREE"
+      quality: "good"
+      description: "Instruction-following, fair scoring"
+  
+  # ============================================
+  # CLOUD JUDGE MODELS (Paid)
+  # ============================================
+  cloud_judge_models:
+    - name: "gpt-4o-mini"
+      provider: "openai"
+      cost: "$0.15 per 1M input tokens"
+      quality: "excellent"
+      description: "Affordable, consistent scoring - best cloud judge"
+      
+    - name: "gpt-4o"
+      provider: "openai"
+      cost: "$2.50 per 1M input tokens"
+      quality: "best"
+      description: "Best judgement quality, expensive"
+      
+    - name: "claude-3-5-sonnet"
+      provider: "anthropic"
+      cost: "$3 per 1M input tokens"
+      quality: "excellent"
+      description: "Excellent reasoning for evaluation"
+  
+  # Score criteria (0-5 scale)
+  criteria:
+    accuracy: 2.0      # Is it factually correct?
+    completeness: 2.0   # Does it fully answer?
+    relevance: 1.0      # Is it on-topic?
+  
+  # Cost tracking (USD per token)
+  costs:
+    local:
+      embedding_per_token: 0.0
+      llm_input_per_token: 0.0
+      llm_output_per_token: 0.0
+    
+    openai:
+      embedding_per_token: 0.00002
+      gpt4o_input_per_token: 0.0000025
+      gpt4o_output_per_token: 0.00001
+      gpt4o_mini_input_per_token: 0.00000015
+      gpt4o_mini_output_per_token: 0.0000006
+
+# ================================================
+# DEPLOYMENT STRATEGY
+# ================================================
+deployment:
+  # Recommended configuration based on use case
+  
+  development:
+    mode: "local_only"
+    embedding: "all-MiniLM-L6-v2"
+    llm: "llama3.2-3b"
+    judge: "llama3.1"
+    reason: "Fast iteration, no costs, works offline"
+  
+  production_budget:
+    mode: "local_only"
+    embedding: "all-mpnet-base-v2"
+    llm: "llama3.1"
+    judge: "llama3.1"
+    reason: "Best quality with zero ongoing costs"
+  
+  production_quality:
+    mode: "hybrid"
+    embedding: "all-mpnet-base-v2"
+    llm: "gpt-4o-mini"
+    judge: "gpt-4o-mini"
+    reason: "Good local embeddings, premium cloud LLM for best answers"
+  
+  enterprise_compliance:
+    mode: "local_only"
+    embedding: "all-mpnet-base-v2"
+    llm: "llama3.1"
+    judge: "llama3.1"
+    reason: "Data never leaves your infrastructure - full compliance"
+
+# ================================================
+# TESTING CONFIGURATION
+# ================================================
+testing:
+  # Enable multi-model comparison mode
+  multi_model_test: false
+  
+  # Test local vs cloud comparison
+  compare_local_vs_cloud: false
+  
+  # LOCAL models to test
+  local_embeddings_to_test:
+    - "all-MiniLM-L6-v2"
+    - "all-mpnet-base-v2"
+  
+  local_llms_to_test:
+    - "llama3.2-3b"
+    - "llama3.1"
+  
+  # CLOUD models to test (requires API keys)
+  cloud_embeddings_to_test:
+    - "text-embedding-3-small"
+  
+  cloud_llms_to_test:
+    - "gpt-4o-mini"
+  
+  chunking_params_to_test:
+    - "small"
+    - "standard"
+    - "large"
+
+# ================================================
+# API KEYS (For Cloud Models)
+# ================================================
+# SECURITY NOTE: Never commit API keys to Git!
+# Use environment variables or separate .env file
+api_keys:
+  openai_api_key: "OPENAI_API_KEY"  # Set as environment variable
+  azure_openai_key: "AZURE_OPENAI_KEY"
+  anthropic_api_key: "ANTHROPIC_API_KEY"
+
+# ================================================
+# APPLICATION SETTINGS
+# ================================================
+app:
+  name: "AI Document Assistant"
+  version: "1.0.0"
+  environment: "development"  # development | production
+  
+  # Deployment mode
+  mode: "local_only"  # local_only | cloud_only | hybrid
+  
+  # Logging
+  log_level: "INFO"  # DEBUG | INFO | WARNING | ERROR
+  log_file: "./logs/app.log"
