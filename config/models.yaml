@@ -94,30 +94,22 @@ embeddings:
 # ================================================
 llm:
   # Which LLM to use currently
-  current: "llama3.2-3b"
+  current: "llama3.1:8b"
   
   # Which provider to use (local or cloud)
   current_provider: "local"  # local | cloud
+  
+  # LLM parameters
+  temperature: 0.7  # 0.0 = deterministic, 1.0 = creative
+  max_tokens: 2000  # Maximum response length
   
   # ============================================
   # LOCAL MODELS (Free, Runs via Ollama)
   # ============================================
   local_models:
-    - name: "llama3.2-3b"
+    - name: "llama3.1:8b"
       provider: "ollama"
-      size: "3B"
-      size_gb: 2
-      ram_required_gb: 4
-      speed: "fast"
-      quality: "good"
-      cost: "FREE"
-      privacy: "full"
-      license: "Llama 3 Community License"
-      description: "Lightweight, fast, good for development and testing"
-      
-    - name: "llama3.1"
-      provider: "ollama"
-      size: "7B"
+      size: "8B"
       size_gb: 4.7
       ram_required_gb: 8
       speed: "medium"
@@ -125,43 +117,73 @@ llm:
       cost: "FREE"
       privacy: "full"
       license: "Llama 3 Community License"
-      description: "Balanced performance, RECOMMENDED for production"
+      description: "Meta's flagship model - BEST for RAG and general Q&A"
+      strengths: "Reasoning, comprehension, balanced performance"
+      
+    - name: "deepseek-r1:7b"
+      provider: "ollama"
+      size: "7B"
+      size_gb: 4.5
+      ram_required_gb: 8
+      speed: "medium"
+      quality: "excellent"
+      cost: "FREE"
+      privacy: "full"
+      license: "MIT"
+      description: "Advanced reasoning model - rivals GPT-4 in logic tasks"
+      strengths: "Complex reasoning, step-by-step thinking, analytical tasks"
+      
+    - name: "qwen2.5:7b"
+      provider: "ollama"
+      size: "7B"
+      size_gb: 4.3
+      ram_required_gb: 8
+      speed: "fast"
+      quality: "excellent"
+      cost: "FREE"
+      privacy: "full"
+      license: "Apache 2.0"
+      description: "Alibaba's powerful model - 18T tokens trained, 128K context"
+      strengths: "Multilingual, long context, instruction following"
       
     - name: "mistral"
       provider: "ollama"
       size: "7B"
       size_gb: 4.1
       ram_required_gb: 8
-      speed: "medium"
-      quality: "excellent"
+      speed: "fast"
+      quality: "very_good"
       cost: "FREE"
       privacy: "full"
       license: "Apache 2.0"
-      description: "Excellent for technical and analytical content"
+      description: "Fast and efficient - great for speed-critical applications"
+      strengths: "Speed, efficiency, technical content"
+      
+    - name: "llama3.2-3b"
+      provider: "ollama"
+      size: "3B"
+      size_gb: 2
+      ram_required_gb: 4
+      speed: "very_fast"
+      quality: "good"
+      cost: "FREE"
+      privacy: "full"
+      license: "Llama 3 Community License"
+      description: "Lightweight, fast - good for testing and development"
+      strengths: "Speed, low resource usage, rapid iteration"
       
     - name: "phi3"
       provider: "ollama"
       size: "3.8B"
       size_gb: 2.3
       ram_required_gb: 4
-      speed: "fast"
+      speed: "very_fast"
       quality: "good"
       cost: "FREE"
       privacy: "full"
       license: "MIT"
-      description: "Microsoft's efficient model, good reasoning"
-      
-    - name: "gemma2"
-      provider: "ollama"
-      size: "9B"
-      size_gb: 5.5
-      ram_required_gb: 12
-      speed: "medium"
-      quality: "excellent"
-      cost: "FREE"
-      privacy: "full"
-      license: "Gemma Terms of Use"
-      description: "Google's capable model, good instruction following"
+      description: "Microsoft's efficient model - good reasoning for size"
+      strengths: "Efficiency, reasoning, math capabilities"
   
   # ============================================
   # CLOUD MODELS (Paid API, Requires Internet)
@@ -331,11 +353,11 @@ evaluation:
       quality: "excellent"
       description: "Analytical, strict scoring"
       
-    - name: "gemma2"
+    - name: "deepseek-r1:7b"
       provider: "ollama"
       cost: "FREE"
-      quality: "good"
-      description: "Instruction-following, fair scoring"
+      quality: "excellent"
+      description: "Advanced reasoning for evaluation - very thorough"
   
   # ============================================
   # CLOUD JUDGE MODELS (Paid)
@@ -429,8 +451,11 @@ testing:
     - "all-mpnet-base-v2"
   
   local_llms_to_test:
-    - "llama3.2-3b"
     - "llama3.1"
+    - "deepseek-r1:7b"
+    - "qwen2.5:7b"
+    - "mistral"
+    - "llama3.2-3b"
   
   # CLOUD models to test (requires API keys)
   cloud_embeddings_to_test:
