@@ -126,6 +126,31 @@ def get_all_llm_models(config: Dict, provider: str = 'local') -> List[Dict]:
         return config['llm']['local_models']
     else:
         return config['llm']['cloud_models']
+    
+def get_llm_temperature(config: Dict) -> float:
+    """
+    Get LLM temperature from config.
+    
+    Args:
+        config: Configuration dictionary.
+        
+    Returns:
+        Temperature value (0.0 to 1.0+).
+    """
+    return config['llm'].get('temperature', 0.7)  # Default 0.7 if not specified
+
+
+def get_llm_max_tokens(config: Dict) -> int:
+    """
+    Get LLM max tokens from config.
+    
+    Args:
+        config: Configuration dictionary.
+        
+    Returns:
+        Maximum tokens for response.
+    """
+    return config['llm'].get('max_tokens', 2000)  # Default 2000
 
 
 # ================================================
