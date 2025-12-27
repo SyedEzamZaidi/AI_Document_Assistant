@@ -13,10 +13,15 @@ from langchain_text_splitters import (
     TokenTextSplitter
 )
 
+from langchain_community.document_loaders import DirectoryLoader, PyPDFLoader
+from langchain_core.documents import Document
+
 from config_loader import (
     load_config,
     get_chunking_method,
-    get_chunking_params
+    get_chunking_params,
+    get_documents_directory,
+    is_recursive_search
 )
 
 
@@ -96,48 +101,146 @@ def load_and_chunk_text(filepath: str, config: dict = None) -> List[str]:
     return chunks
 
 
+
+def load_documents_from_directory(config: dict = None) -> List[Document]:
+    """
+    Load all documents from configured directory and chunk them.
+    Supports multiple file types: PDF, TXT, DOCX.
+    
+    Args:
+        config: Configuration dictionary. Loads from file if None.
+        
+    Returns:
+        List of Document objects with chunks.
+        
+    Raises:
+        Exception: If directory doesn't exist or loading fails.
+    """
+    try:
+        if config is None:
+            config = load_config()
+        
+        # Get configuration
+        directory_path = get_documents_directory(config)
+        file_types = config['document_sources']['file_types']
+        recursive = is_recursive_search(config)
+        
+        # Check if directory exists
+        if not Path(directory_path).exists():
+            raise FileNotFoundError(f"Documents directory not found: {directory_path}")
+        
+        print(f"Loading documents from: {directory_path}")
+        print(f"File types: {file_types}")
+        print(f"Recursive search: {recursive}")
+        
+        all_documents = []
+        
+        # Load each file type
+        for file_type in file_types:
+            glob_pattern = f"**/*.{file_type}" if recursive else f"*.{file_type}"
+            
+            # Choose appropriate loader
+            if file_type == "pdf":
+                loader_cls = PyPDFLoader
+            elif file_type == "txt":
+                from langchain_community.document_loaders import TextLoader
+                loader_cls = TextLoader
+            elif file_type == "docx":
+                from langchain_community.document_loaders import Docx2txtLoader
+                loader_cls = Docx2txtLoader
+            else:
+                print(f"Warning: Unsupported file type '{file_type}', skipping...")
+                continue
+            
+            # Load documents of this type
+            loader = DirectoryLoader(
+                directory_path,
+                glob=glob_pattern,
+                loader_cls=loader_cls
+            )
+            
+            docs = loader.load()
+            
+            if docs:
+                print(f"Loaded {len(docs)} pages from {file_type.upper()} files")
+                all_documents.extend(docs)
+        
+        if not all_documents:
+            print(f"Warning: No documents found in {directory_path}")
+            return []
+        
+        print(f"\nTotal pages loaded: {len(all_documents)}")
+        
+        # Get chunking configuration
+        method = get_chunking_method(config)
+        chunk_size, chunk_overlap = get_chunking_params(config)
+        
+        # Create text splitter
+        splitter = get_text_splitter(chunk_size, chunk_overlap, method)
+        
+        # Split documents into chunks
+        chunks = splitter.split_documents(all_documents)
+        
+        print(f"Created {len(chunks)} chunks")
+        
+        return chunks
+        
+    except Exception as e:
+        raise Exception(f"Failed to load documents: {e}")
+
+
 if __name__ == "__main__":
-    # Test the document processor with config
     print("="*70)
     print("DOCUMENT PROCESSOR TEST")
     print("="*70)
     
-    # Load config
-    config = load_config()
-    
-    # Test file path
-    filepath = "data/sample/test.txt"
-    
-    # Display configuration being used
-    print(f"\nFile: {filepath}")
-    print(f"Method: {get_chunking_method(config)}")
-    chunk_size, chunk_overlap = get_chunking_params(config)
-    print(f"Parameters: chunk_size={chunk_size}, chunk_overlap={chunk_overlap}\n")
-    
-    # Process document
     try:
-        chunks = load_and_chunk_text(filepath, config)
+        config = load_config()
         
-        # Display results
-        print(f"✅ Successfully processed document!")
-        print(f"Total Chunks: {len(chunks)}\n")
+        # Test 1: Single text file
+        print("\nTest 1: Single Text File")
+        print("-"*70)
+        filepath = "data/sample/test.txt"
         
-        # Show first 3 chunks
-        print("First 3 chunks:")
-        print("-" * 70)
-        for i, chunk in enumerate(chunks[:3], 1):
-            print(f"\nChunk {i} ({len(chunk)} chars):")
-            print(f"{chunk[:200]}{'...' if len(chunk) > 200 else ''}")
+        try:
+            chunks = load_and_chunk_text(filepath, config)
+            print(f"File: {filepath}")
+            print(f"Chunks created: {len(chunks)}")
+            print(f"First chunk: {chunks[0][:150]}...\n")
+        except FileNotFoundError:
+            print(f"File not found: {filepath}\n")
         
-        if len(chunks) > 3:
-            print(f"\n... and {len(chunks) - 3} more chunks")
+        # Test 2: All documents from directory
+        print("Test 2: All Documents from Directory")
+        print("-"*70)
+        
+        try:
+            document_chunks = load_documents_from_directory(config)
+            
+            if document_chunks:
+                print(f"Total chunks created: {len(document_chunks)}")
+                
+                # Show first chunk WITH page number
+                first_chunk = document_chunks[0]
+                source = first_chunk.metadata.get('source', 'Unknown')
+                page = first_chunk.metadata.get('page', 'N/A')  # Page number!
+                
+                print(f"\nFirst chunk preview:")
+                print(f"Content: {first_chunk.page_content[:150]}...")
+                print(f"Source: {source}")
+                print(f"Page: {page}")  # Show page number
+                
+            else:
+                print("No documents found")
+                print("Add files to data/documents/ to test")
+                
+        except FileNotFoundError:
+            print("Directory 'data/documents/' not found")
+            print("Create it and add PDF/TXT/DOCX files to test")
         
         print("\n" + "="*70)
-        print("✅ DOCUMENT PROCESSOR WORKING!")
+        print("TESTS COMPLETE")
         print("="*70)
         
-    except FileNotFoundError as e:
-        print(f"\n❌ Error: {e}")
-        print("Make sure data/sample/test.txt exists!")
     except Exception as e:
-        print(f"\n❌ Unexpected error: {e}")
+        print(f"ERROR: {e}") 

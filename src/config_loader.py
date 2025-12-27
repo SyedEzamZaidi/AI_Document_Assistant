@@ -31,6 +31,35 @@ def load_config(config_file: str = "config/models.yaml") -> Dict:
     
     return config
 
+# ================================================
+# DOCUMENT SOURCES CONFIGURATION
+# ================================================
+
+def get_documents_directory(config: Dict) -> str:
+    """
+    Get documents directory path from config.
+    
+    Args:
+        config: Configuration dictionary.
+        
+    Returns:
+        Documents directory path.
+    """
+    return config['document_sources']['documents_directory']
+
+
+def is_recursive_search(config: Dict) -> bool:
+    """
+    Check if recursive directory search is enabled.
+    
+    Args:
+        config: Configuration dictionary.
+        
+    Returns:
+        True if recursive search enabled.
+    """
+    return config['document_sources'].get('recursive', True)
+
 
 # ================================================
 # EMBEDDING MODEL FUNCTIONS

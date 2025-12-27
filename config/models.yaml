@@ -493,3 +493,26 @@ app:
   # Logging
   log_level: "INFO"  # DEBUG | INFO | WARNING | ERROR
   log_file: "./logs/app.log"
+
+
+# ================================================
+# DOCUMENT SOURCES CONFIGURATION
+# ================================================
+document_sources:
+  # Primary document directory
+  documents_directory: "./data/documents"
+  
+  # Supported file types
+  file_types:
+    - "pdf"
+    - "txt"
+    - "docx"
+  
+  # Recursive search in subdirectories
+  recursive: true
+  
+  # Exclude patterns
+  exclude:
+    - "*.tmp"
+    - "~*"
+    - ".DS_Store"
